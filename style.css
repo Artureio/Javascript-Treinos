@@ -6,7 +6,7 @@
     background: #c3c3c3;
 }
 
-#div4,#div3,#div2,#div1,#div0, #div5{
+#div4,#div3,#div2,#div1,#div0, #div5,#div6{
     background-color: beige;
     border: 1px solid black;
     margin:10px;
@@ -21,10 +21,20 @@
     flex-flow: column;
     width: 100%;
 }
-
+#div6 button{
+    margin: 0 auto;
+    width: 250px;
+    height: 70px;
+}
+#div6{
+    height:80px ;
+    align-items:center;
+    justify-content:center;
+}
 
 #botao{
     line-height: 40px;
+    
 }
 ul{
     list-style-type: none;

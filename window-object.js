@@ -66,7 +66,12 @@ function checarUsuario(){
         msg.textContent = '';
     }
 }
-
-
 var senha = document.getElementById('password');
-password.onblur = checarUsuario;
+password.onblur = checarUsuario; //espera o evento blur acontecer para executar a função
+//------------//-------------//
+//Ouvintes de evento
+function mudarClasse(){
+    this.className = 'btn btn-warning btn-lg';
+}
+var botao = document.getElementById('botao1');
+botao.addEventListener("click",mudarClasse,false);//ao 'clicar' muda a classe
