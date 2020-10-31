@@ -1,0 +1,59 @@
+
+.container{
+    background: #c3c3c3;
+}
+
+#div4,#div3,#div2,#div1,#div0, #div5{
+    background-color: beige;
+    border: 1px solid black;
+    margin:10px;
+}
+#div5{
+    padding: 50px;
+}
+#div5 form{
+    margin: 0 auto;
+    font-size: 20px;
+    
+}
+label{
+    width: 25%;
+}
+#botao{
+    width: 100%;
+    line-height: 40px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+
+    padding: 4px;
+    justify-content: center;
+}
+ul>li{
+    margin: 5px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+
+}
+ul#ul1{
+    width: 100%;
+}
+.change{
+    background-color: pink;
+}
+.lista1{
+    padding: 10px;
+    
+}
+.lista2{
+    padding: 10px;
+    
+}
+.lista3{
+    background-color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: white;
+    padding: 20px;
+}
