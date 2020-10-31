@@ -60,13 +60,13 @@ cabecalho.textContent = novoCabecalho;
     //checando numero de caracteres
 function checarUsuario(){
     var msg = document.getElementById('feedback');
-    if (this.value.length < 5 && this.value.length !=0){//verifica se o elemento em que a funcao foi aplicada, atende aos requisitos 
-        msg.textContent = 'precisa ter 5 letras!';
+    if (this.value.length < 8 && this.value.length !=0){//verifica se o elemento em que a funcao foi aplicada, atende aos requisitos 
+        msg.textContent = 'A Senha precisa ter, no mínimo 8 caracteres';
     }else{
         msg.textContent = '';
     }
 }
-var user = document.getElementById('username');
+
+
 var senha = document.getElementById('password');
-user.onblur = checarUsuario;
 password.onblur = checarUsuario;
