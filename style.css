@@ -6,14 +6,14 @@
     background: #c3c3c3;
 }
 
-#div4,#div3,#div2,#div1,#div0, #div5,#div6{
+#div4,#div3,#div2,#div1,#div0, #div5,#div6, #div7{
     background-color: beige;
     border: 1px solid black;
     margin:10px;
 
 }
 
-#div5 form{
+#div5 form,#div6 form{
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -21,20 +21,19 @@
     flex-flow: column;
     width: 100%;
 }
-#div6 button{
+#div7 button{
     margin: 0 auto;
     width: 250px;
     height: 70px;
 }
-#div6{
-    height:80px ;
+#div7{
+    height:100px ;
     align-items:center;
     justify-content:center;
 }
 
-#botao{
-    line-height: 40px;
-    
+#botao,#botao2{
+    line-height: 40px; 
 }
 ul{
     list-style-type: none;
@@ -69,7 +68,10 @@ ul#ul1{
     color: white;
     padding: 20px;
 }
-#feedback{
+#feedback,#feedback1{
     color: red;
     padding-bottom: 20px;
+}
+#contador{
+    font-size: 30px;
 }

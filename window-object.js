@@ -69,9 +69,37 @@ function checarUsuario(){
 var senha = document.getElementById('password');
 password.onblur = checarUsuario; //espera o evento blur acontecer para executar a função
 //------------//-------------//
-//Ouvintes de evento
-function mudarClasse(){
-    this.className = 'btn btn-warning btn-lg';
+
+//Ouvintes de evento sem parâmetros
+var contador = 1;
+function clickClasse(){
+    var click = document.getElementById('contador');
+    click.innerText= contador;
+    if(contador % 2 === 0){
+        this.className = 'btn btn-primary btn-lg col-md-2';
+    }else{
+        this.className = 'btn btn-danger btn-lg col-md-2'
+    }
+    contador++;
 }
-var botao = document.getElementById('botao1');
-botao.addEventListener("click",mudarClasse,false);//ao 'clicar' muda a classe
+var botao2 = document.getElementById('botao2');
+botao2.addEventListener('click',clickClasse,false); //ao 'clicar' muda a classe
+console.log(contador);
+//----------//------------//
+
+//eventListener com parâmetro
+var user = document.getElementById('username1');
+var usermsg = document.getElementById('feedback1');
+
+function checarUsuario1(tamanhoMinimo){
+    if (user.value.length < tamanhoMinimo){
+        usermsg.textContent = 'Usuario deve ter no minimo ' + tamanhoMinimo + 'Letras';
+    }else{
+        usermsg.textContent = '';
+    }
+}
+user.addEventListener('blur', function(){//Declara uma function e dentro dela coloca o método com parâmetro '2'
+    checarUsuario1(1);
+},false);
+//------------//------------//
+

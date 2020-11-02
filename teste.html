@@ -79,16 +79,30 @@
       </form>
       <br>
     </div><!--FimFormulario-->
-
-    <div class="row" id="div6">
-      <h4>Event Listener: mudando classe do botao ao evento 'Click':</h4>
-      <button type="button" id="botao1" class="btn btn-success btn-lg">
+    
+    
+    
+    <div class="row" id="div7">
+      <h4 class="col-md-6">Event Listener: mudando classe do botao ao evento 'Click':</h4>
+      <button type="button" id="botao2" class="btn btn-primary btn-lg col-md-2">
         Clique aqui
       </button>
+      <p class="col-md-4">Contador de clicks: <span id="contador"></span></p>
+    </div>
+    
+    <div class="row" id="div6">
+      <h4 class="col-md-12">Event Listener com parâmetro: Escolhendo quantos caracteres o login deve ter, dentro do eventlistener:</h4>
+      <form  method="post">
+        <label for="username">Login</label>
+        <input type="text"  id="username1"/>
+        <label for="password">Senha</label>
+        <input type="password" name="" id="password1">
+        <input id="botao2" type="submit" value="Sign Up"/>
+        <div id="feedback1"></div>
+      </form>
     </div>
   </div><!--FimContainer-->
   
- 
 
 
 
